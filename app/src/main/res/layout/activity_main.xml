@@ -17,4 +17,11 @@
         app:tabMode="scrollable"
         app:tabSelectedTextColor="@color/text_on_primary"/>
 
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="24sp"/>
+
 </LinearLayout>
