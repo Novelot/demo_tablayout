@@ -27,7 +27,7 @@ public class MyFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        TextView tv = new TextView(getContext());
+        TextView tv = new TextView(getActivity());
         tv.setText(data.name);
         return tv;
     }
