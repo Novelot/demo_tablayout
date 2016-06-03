@@ -6,8 +6,8 @@
               tools:context=".MainActivity">
 
     <android.support.design.widget.TabLayout
-        android:id="@+id/sliding_tabs"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/tab_background"
@@ -16,6 +16,11 @@
         app:tabIndicatorColor="@color/tab_selected_strip"
         app:tabMode="scrollable"
         app:tabSelectedTextColor="@color/text_on_primary"/>
+
+    <com.novelot.demo_tablayout.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
     <TextView
         android:id="@+id/tv"
