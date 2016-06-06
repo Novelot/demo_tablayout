@@ -4,19 +4,27 @@
               android:layout_height="match_parent"
               android:orientation="horizontal">
 
-    <ImageView
+    <TextView
+        android:id="@+id/iv1"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@mipmap/ic_launcher"/>
+        android:background="#000000"
+        android:textColor="#ffffff"/>
 
-    <ImageView android:background="@mipmap/ic_launcher"
+    <TextView
+        android:id="@+id/iv2"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:background="#000000"
+        android:textColor="#ffffff"/>
 
-    <ImageView android:background="@mipmap/ic_launcher"
+    <TextView
+        android:id="@+id/iv3"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:background="#000000"
+        android:textColor="#ffffff"/>
 </LinearLayout>
