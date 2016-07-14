@@ -5,17 +5,35 @@
               android:orientation="vertical"
               tools:context=".MainActivity">
 
-    <android.support.design.widget.TabLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/sliding_tabs"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/tab_background"
-        app:tabContentStart="?actionBarInsetStart"
-        app:tabGravity="center"
-        app:tabIndicatorColor="@color/tab_selected_strip"
-        app:tabMode="scrollable"
-        app:tabSelectedTextColor="@color/text_on_primary"/>
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            style="@style/TitleBar"
+            android:src="@drawable/ic_search"
+            />
+
+        <android.support.design.widget.TabLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/sliding_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:tabBackground="@drawable/selector_bg_title_tab"
+            app:tabContentStart="?actionBarInsetStart"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/tab_selected_strip"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/text_on_primary"/>
+
+        <ImageButton
+            style="@style/TitleBar"
+            android:src="@drawable/ic_arrow_down"/>
+    </LinearLayout>
 
     <com.novelot.demo_tablayout.MyViewPager
         android:id="@+id/viewPager"

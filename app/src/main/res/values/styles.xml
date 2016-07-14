@@ -1,11 +1,11 @@
 <resources>
     <declare-styleable name="BaseTheme">
-        <attr name="actionBarIconColor" format="color" />
-        <attr name="actionBarInsetStart" format="dimension" />
-        <attr name="spinnerBarInsetStart" format="dimension" />
-        <attr name="popupItemBackground" format="reference" />
-        <attr name="photoItemForeground" format="reference" />
-        <attr name="photoItemForegroundBorderless" format="reference" />
+        <attr name="actionBarIconColor" format="color"/>
+        <attr name="actionBarInsetStart" format="dimension"/>
+        <attr name="spinnerBarInsetStart" format="dimension"/>
+        <attr name="popupItemBackground" format="reference"/>
+        <attr name="photoItemForeground" format="reference"/>
+        <attr name="photoItemForegroundBorderless" format="reference"/>
         <attr name="imageItemBackground" format="reference"/>
     </declare-styleable>
     <!-- Base application theme. -->
@@ -15,4 +15,14 @@
     </style>
 
     <dimen name="keyline_2">72dp</dimen>
+
+    <style name="TitleBar" parent="Base.Theme.AppCompat">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@drawable/selector_bg_title_bar</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
 </resources>

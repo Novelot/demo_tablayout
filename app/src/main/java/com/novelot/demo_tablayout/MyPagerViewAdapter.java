@@ -20,7 +20,7 @@ public class MyPagerViewAdapter extends FragmentStatePagerAdapter {
     public MyPagerViewAdapter(Context context, FragmentManager fm) {
         super(fm);
         this.mContext = context;
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 14; i++) {
             mDate.add(new Bean("Name-" + i));
         }
     }
