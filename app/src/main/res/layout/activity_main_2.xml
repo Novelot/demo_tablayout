@@ -5,23 +5,17 @@
               android:orientation="vertical"
               tools:context=".MainActivity">
 
-    <LinearLayout
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ffffff"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <ImageButton
-            style="@style/TitleBar"
-            android:src="@drawable/ic_search"/>
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
 
         <android.support.design.widget.TabLayout
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/sliding_tabs"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_height="?attr/actionBarSize"
             app:tabBackground="@drawable/selector_bg_title_tab"
             app:tabContentStart="?actionBarInsetStart"
             app:tabGravity="center"
@@ -29,10 +23,7 @@
             app:tabMode="scrollable"
             app:tabSelectedTextColor="@color/text_on_primary"/>
 
-        <ImageButton
-            style="@style/TitleBar"
-            android:src="@drawable/ic_arrow_down"/>
-    </LinearLayout>
+    </android.support.v7.widget.Toolbar>
 
     <com.novelot.demo_tablayout.MyViewPager
         android:id="@+id/viewPager"

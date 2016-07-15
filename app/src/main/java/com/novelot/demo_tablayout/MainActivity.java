@@ -1,10 +1,13 @@
 package com.novelot.demo_tablayout;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +19,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        SharedPreferences sp = getSharedPreferences("novelot", Context.MODE_PRIVATE);
+        boolean witchLayout = sp.getBoolean("witchLayout", true);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putBoolean("witchLayout", !witchLayout);
+        editor.commit();
+        if (witchLayout) {
+            setContentView(R.layout.activity_main);
+        } else {
+            setContentView(R.layout.activity_main_2);
+            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+            toolbar.setNavigationIcon(R.drawable.ic_search);
+            toolbar.inflateMenu(R.menu.menu_main);
+        }
 
         //find view
         mViewPager = (MyViewPager) findViewById(R.id.viewPager);
