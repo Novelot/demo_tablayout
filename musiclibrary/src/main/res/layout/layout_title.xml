@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageButton
+        android:id="@+id/btnLeft"
+        style="@style/TitleBar"
+        android:src="@drawable/ic_search_normal"/>
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#f4f4f4"
+        />
+
+    <android.support.design.widget.TabLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:tabBackground="@drawable/selector_bg_title_tab"
+        app:tabContentStart="0dp"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/tab_selected_strip"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/text_on_primary"/>
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#f4f4f4"/>
+
+    <ImageButton
+        android:id="@+id/btnRight"
+        style="@style/TitleBar"
+        android:src="@drawable/ic_arrow_down_normal"/>
+</merge>

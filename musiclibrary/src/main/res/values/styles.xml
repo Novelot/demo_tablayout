@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Design.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TitleBar" parent="Base.Theme.AppCompat">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>
