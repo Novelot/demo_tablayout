@@ -30,6 +30,12 @@ public class MusicLibraryFragment extends Fragment {
         mViewPager.setAdapter(mAdapter);
         mTitleLayout.setupWithViewPager(mViewPager);
         mTitleLayout.setOnTabSelectedListener(new SimpleTabSelectedListener(mViewPager));
+        mTitleLayout.setRightOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
         return rootView;
     }
 
